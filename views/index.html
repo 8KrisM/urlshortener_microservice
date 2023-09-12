@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>URL Shortener Microservice</title>
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <main>
+      <section>
+        <form action="api/shorturl" method="POST">
+          <fieldset>
+            <label for="url_input">URL to shorten: </label>
+            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
+            <input type="submit" value="POST URL" />
+          </fieldset>
+        </form>
+        <h2>How to use?</h2>
+        <p>Insert URL you want to shorten to the input above.<br>
+        In response, you will receive JSON with original url and short URL.<br>
+        Then, access your shortened website via [base url]/api/short_url/:short_url</p>
+        <p>Example: <a href="https://www.google.com/" target="_blank">[base url]/api/KSPhN</a>
+        - redirects to google.com</p>
+      </section>
+    </main>
+    <footer>
+      <p>By <a href="https://8krism.github.io">8KrisM</a></p>
+    </footer>
+  </body>
+</html>
